@@ -1,5 +1,4 @@
-title: "Dr. Prashant Tripathi Hospital"
-description: "A modern healthcare facility with compassionate care."
-baseurl: "" 
-url: "https://<your-username>.github.io/hospital-website"
-theme: minima
+title: My Website
+description: Personal site
+baseurl: "/website" # only if it's a project repo (not needed if repo name = 4dity4k.github.io)
+url: "https://4dity4k.github.io"
