@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            secondary: '#16a34a',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+  {% include header.html %}
+
+  <main class="flex-1 container mx-auto px-4 py-8">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>
