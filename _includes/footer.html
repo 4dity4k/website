@@ -1,3 +1,30 @@
-<footer class="bg-gray-100 text-center py-6 mt-8">
-  <p class="text-gray-600">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+<footer class="bg-white border-t mt-12">
+  <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+    <div>
+      <h3 class="font-semibold text-lg">{{ site.title }}</h3>
+      <p class="text-sm text-gray-600 mt-2">Expert knee and joint care. OPD: Mon-Fri 10:00–5:00</p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold">Contact</h4>
+      <p class="text-sm text-gray-600 mt-2">📍 Lucknow, India</p>
+      <p class="text-sm text-gray-600">📞 <a href="tel:+911234567890" class="text-primary">+91 12345 67890</a></p>
+      <p class="text-sm text-gray-600">✉️ <a href="mailto:info@drprashanttripathi.com" class="text-primary">info@drprashanttripathi.com</a></p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold">Follow</h4>
+      <div class="flex space-x-3 mt-2">
+        <a class="text-gray-600 hover:text-primary" href="#" aria-label="Facebook">FB</a>
+        <a class="text-gray-600 hover:text-primary" href="#" aria-label="YouTube">YT</a>
+        <a class="text-gray-600 hover:text-primary" href="#" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-50 border-t py-4">
+    <div class="container mx-auto text-sm text-center text-gray-500">
+      © {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.
+    </div>
+  </div>
 </footer>

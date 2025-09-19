@@ -1,4 +1,6 @@
-title: My Website
-description: Personal site
-baseurl: "/website" # only if it's a project repo (not needed if repo name = 4dity4k.github.io)
-url: "https://4dity4k.github.io"
+title: "Dr. Prashant Tripathi Clinic"
+description: "Orthopedic Surgeon - Knee & Joint Specialist. Expert care with modern techniques."
+url: "https://4dity4k.github.io"   # set to your GitHub Pages base URL or https://drprashanttripathi.com
+baseurl: "/website"                 # set to "" if repo is named 4dity4k.github.io or if publishing root
+theme: minima
+paginate: 5

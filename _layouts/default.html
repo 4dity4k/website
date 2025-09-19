@@ -1,29 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   {% include head.html %}
-  <!-- Tailwind CSS via CDN -->
+  <!-- Tailwind via CDN (no build step). Good compromise for GitHub Pages. -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#2563eb',
-            secondary: '#16a34a',
-          }
+            primary: '#0b63d6',
+            accent: '#0ea5a4'
+          },
+          container: { center: true, padding: '1rem' }
         }
       }
     }
   </script>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+<body class="antialiased text-gray-800 bg-gray-50">
   {% include header.html %}
 
-  <main class="flex-1 container mx-auto px-4 py-8">
+  <main class="min-h-screen">
     {{ content }}
   </main>
 
   {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

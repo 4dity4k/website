@@ -1,0 +1,3 @@
+/* style overrides and small utilities */
+.prose img { border-radius: 0.5rem; }
+a { transition: color .15s ease; }
